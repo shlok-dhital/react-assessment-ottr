@@ -6,7 +6,7 @@ const App = () => {
   const [currentCount, setCurrentCount] = useState(0);
 
   const handleChangeCount = (changeNum) => {
-    setCurrentCount(currentCount + changeNum);
+    setCurrentCount((prev) => prev + changeNum);
   };
 
   return (

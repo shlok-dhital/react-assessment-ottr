@@ -1,6 +1,6 @@
-const Child = ({ handleChangeCount }) => {
-  const CHANGE_AMT = 1;
+const CHANGE_AMT = 1;
 
+const Child = ({ handleChangeCount }) => {
   const handleMinusClick = () => {
     handleChangeCount(-CHANGE_AMT);
   };
