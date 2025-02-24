@@ -1,10 +1,12 @@
-const Child = () => {
+const Child = ({ handleChangeCount }) => {
+  const CHANGE_AMT = 1;
+
   const handleMinusClick = () => {
-    /* Implement logic here */
+    handleChangeCount(-CHANGE_AMT);
   };
 
   const handlePlusClick = () => {
-    /* Implement logic here */
+    handleChangeCount(CHANGE_AMT);
   };
 
   return (
